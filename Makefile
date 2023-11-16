@@ -6,3 +6,6 @@ deploy-lambda:
 		--template-file dist/infra/lambdas.yml \
 		--stack-name sycamore \
 		--capabilities CAPABILITY_IAM
+
+deploy-static:
+	aws s3 sync ./dist s3://rickyharkins.com
