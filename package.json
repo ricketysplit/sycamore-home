@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cp public dist",
+    "build": "cp public/* dist/public",
     "build:js": "webpack --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "push": "aws s3 sync ./dist s3://rickyharkins.com",
+    "push": "aws s3 sync ./dist/public s3://rickyharkins.com",
     "serve:local": "cd public && npx http-server"
   },
   "author": "Ricky Harkins",
