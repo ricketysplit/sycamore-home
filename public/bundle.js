@@ -1,1 +1,1 @@
-console.log("js loading");
+(()=>{var e;e=new URLSearchParams(document.location.search).get("schedule_id"),console.log({scheduleId:e})})();
