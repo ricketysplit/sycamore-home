@@ -1,1 +1,0 @@
-(()=>{var e,o;e=new URLSearchParams(document.location.search).get("token"),o=JSON.parse(atob(e)).schedule_id,console.log({decoded:JSON.parse(atob(e))}),console.log(o)})();
